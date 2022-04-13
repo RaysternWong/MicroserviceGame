@@ -29,5 +29,19 @@ namespace FundTransferApi.Controllers
 
             return null;
         }
+
+        [HttpPost("Withdraw")]
+        public IActionResult Withdraw(WithdrawModel withdraw)
+        {
+            var fundTransfer = new FundTransfer(withdraw.Token);
+            var response = fundTransfer.Withdraw(withdraw.Amount);
+
+            if (response != null)
+            {
+                return Ok(new { response });
+            }
+
+            return null;
+        }
     }
 }
