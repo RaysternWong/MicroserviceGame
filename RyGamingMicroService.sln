@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32407.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementAPi", "UserManagementAPi\UserManagementAPi.csproj", "{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundTransferApi", "FundTransferApi\FundTransferApi.csproj", "{DAF88A1A-3856-428E-8496-9A6DFB2C0929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D824FD6-2320-4DCF-9CDD-1C0D0BB4EF54}
+	EndGlobalSection
+EndGlobal
