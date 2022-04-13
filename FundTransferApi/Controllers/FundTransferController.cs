@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RyGamingProviderClientLibrary;
+using System;
 
 namespace FundTransferApi.Controllers
 {
@@ -20,11 +21,19 @@ namespace FundTransferApi.Controllers
         public IActionResult TopUp(TopUpModel topUpModel)
         {
             var fundTransfer = new FundTransfer(topUpModel.Token);
-            var response = fundTransfer.TopUp(topUpModel.Amount);
 
-            if (response != null)
+            try
             {
-                return Ok(new { response });
+                var response = fundTransfer.TopUp(topUpModel.Amount);
+
+                if (response != null)
+                {
+                    return Ok(new { response });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
 
             return null;
@@ -34,11 +43,19 @@ namespace FundTransferApi.Controllers
         public IActionResult Withdraw(WithdrawModel withdraw)
         {
             var fundTransfer = new FundTransfer(withdraw.Token);
-            var response = fundTransfer.Withdraw(withdraw.Amount);
 
-            if (response != null)
+            try
             {
-                return Ok(new { response });
+                var response = fundTransfer.Withdraw(withdraw.Amount);
+
+                if (response != null)
+                {
+                    return Ok(new { response });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
 
             return null;

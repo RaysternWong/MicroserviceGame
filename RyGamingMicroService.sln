@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementAPi", "UserManagementAPi\UserManagementAPi.csproj", "{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagementApi", "UserManagementAPi\UserManagementApi.csproj", "{C6DBFBA6-B739-4105-A5D1-08ACE6CD83AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FundTransferApi", "FundTransferApi\FundTransferApi.csproj", "{DAF88A1A-3856-428E-8496-9A6DFB2C0929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FundTransferApi", "FundTransferApi\FundTransferApi.csproj", "{DAF88A1A-3856-428E-8496-9A6DFB2C0929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBetApi", "GameBetApi\GameBetApi.csproj", "{92D7B529-ADD7-488B-8770-AB1B9A10D520}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAF88A1A-3856-428E-8496-9A6DFB2C0929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D7B529-ADD7-488B-8770-AB1B9A10D520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D7B529-ADD7-488B-8770-AB1B9A10D520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D7B529-ADD7-488B-8770-AB1B9A10D520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D7B529-ADD7-488B-8770-AB1B9A10D520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
