@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FundTransferApi.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RyGamingProviderClientLibrary;
 
 namespace FundTransferApi.Controllers
 {
@@ -7,16 +9,25 @@ namespace FundTransferApi.Controllers
     [Route("[controller]")]
     public class FundTransferController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<FundTransferController> _logger;
 
         public FundTransferController(ILogger<FundTransferController> logger)
         {
             _logger = logger;
+        }
+
+        [HttpPost("TopUp")]
+        public IActionResult TopUp(TopUpModel topUpModel)
+        {
+            var fundTransfer = new FundTransfer(topUpModel.Token);
+            var response = fundTransfer.TopUp(topUpModel.Amount);
+
+            if (response != null)
+            {
+                return Ok(new { response });
+            }
+
+            return null;
         }
     }
 }
